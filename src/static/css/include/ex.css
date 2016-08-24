@@ -1,0 +1,22 @@
+
+.none {
+	display: none;
+}
+
+.visible {
+    visibility: visible;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+._vspliter {
+    width: 2px;
+    height: 14px;
+    line-height: 14px;
+    display: inline-block;
+    background: #B6B6B6;
+    margin: 0 10px;
+    margin-bottom: -2px;
+}

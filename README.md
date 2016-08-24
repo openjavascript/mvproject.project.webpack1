@@ -1,44 +1,35 @@
 # mvproject.project.webpack1
 ================
 
-## ¹¹½¨»·¾³
+## æ„å»ºç¯å¢ƒ
 
-½øÈë¹¤×÷Ä¿Â¼
+å®‰è£… mvproject `sudo npm install -g mvproject`
 
-½«ÑàÎ²·şÔ´Âëcloneµ½±¾µØ
+å®‰è£…ç‡•å°¾æœ `mvproject install stc`
 
-½øÈëÑàÎ²·şÄ¿Â¼`cd stc`£¬Ö´ĞĞ`sh update.sh`£¬Íê³ÉÑàÎ²·ş³õÊ¼»¯
+åˆå§‹åŒ–é¡¹ç›® `mvproject install webpack1`
 
-## ¹¹½¨±àÒë
+## æ„å»ºç¼–è¯‘
 
-ÔËĞĞÃüÁî`sh build.sh`£¬Êä³öÄ¿Â¼`output/`
+è¿è¡Œå‘½ä»¤`mvproject build`ï¼Œè¾“å‡ºç›®å½•`output/`
 
-## webpack »·¾³³õÊ¼»¯
+## webpack ç¯å¢ƒåˆå§‹åŒ–
 
-ÔËĞĞÃüÁî `sh init_webpack.sh` ³õÊ¼»¯ npm package.json ºÍ bower.json ÅäÖÃµÄ×é¼ş
+è¿è¡Œå‘½ä»¤ `mvproject update` åˆå§‹åŒ– npm package.json å’Œ bower.json é…ç½®çš„ç»„ä»¶
 
-## ¾²Ì¬×ÊÔ´ËµÃ÷
+## é™æ€èµ„æºè¯´æ˜
 
-³ıÁË js ºÍ html, Ô­ÓĞµÄ css¡¢img ½á¹¹²»±ä
+é™¤äº† js å’Œ html, åŸæœ‰çš„ cssã€img ç»“æ„ä¸å˜
 
-js µÄ¿ª·¢Ä¿Â¼½«¸ÄÎª src-webpack/static Ä¿Â¼ÏÂÃæµÄjs
-src-webpack/static/js ÀïÃæµÄÎÄ¼ş webpack ±àÒëºó½«ÊµÊ±±£´æµ½ src/static/js Ä¿Â¼ÏÂ¶ÔÓ¦µÄÎÄ¼ş
+js çš„å¼€å‘ç›®å½•ä¸º src-webpack/static ç›®å½•ä¸‹é¢çš„js
+src-webpack/static/js é‡Œé¢çš„æ–‡ä»¶ webpack ç¼–è¯‘åå°†å®æ—¶ä¿å­˜åˆ° src/static/js ç›®å½•ä¸‹å¯¹åº”çš„æ–‡ä»¶
 
-html µÄ¿ª·¢Ä¿Â¼½«¸ÄÎª src-webpack/Ä¿Â¼ÏÂÃæµÄhtmlÎÄ¼ş
-src-webpack/*.html ÎÄ¼ş webpack ±àÒëºó½«ÊµÊ±±£´æµ½ src/*.html 
+html çš„å¼€å‘ç›®å½•ä¸º src-webpack/ç›®å½•ä¸‹é¢çš„htmlæ–‡ä»¶
+src-webpack/*.html æ–‡ä»¶ webpack ç¼–è¯‘åå°†å®æ—¶ä¿å­˜åˆ° src/*.html 
 
-## Ê¹ÓÃ webpack
+## ä½¿ç”¨ webpack
     
-ÊµÊ±±àÒëÃüÁî `webpack --watch`
+å®æ—¶ç¼–è¯‘å‘½ä»¤ `webpack --watch`
 
-Èç¹û·¢ÏÖÎÄ¼ş¸ü¸ÄºóÄÚÈİÃ»ÓĞ¸üĞÂ£¬ÇëÖØĞÂÔËĞĞÃüÁî `webpack --watch` (Ä¿Ç°¸ÃÎÊÌâ´æÔÚÓÚ¸ö±ğÎÄ¼şÏµÍ³)
-
-## pc Õ¾µãµÄ webpack ¸Ä¶¯Ê¾Àı
-
-Çë²é¿´ ·ÖÖ§ `0.2`
-
-## webpack cdn ·¢²¼ËµÃ÷
-
-×ÊÔ´·¢²¼»¹ÊÇÊ¹ÓÃÔ­ÓĞµÄ stc ·¢²¼·½·¨
-
+å¦‚æœå‘ç°æ–‡ä»¶æ›´æ”¹åå†…å®¹æ²¡æœ‰æ›´æ–°ï¼Œè¯·é‡æ–°è¿è¡Œå‘½ä»¤ `webpack --watch` (ç›®å‰è¯¥é—®é¢˜å­˜åœ¨äºä¸ªåˆ«æ–‡ä»¶ç³»ç»Ÿ)
 

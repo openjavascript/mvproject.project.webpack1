@@ -3,11 +3,11 @@
 
 ## 构建环境
 
-安装 mvproject `sudo npm install -g mvproject`
+安装 mvproject:              `sudo npm install -g mvproject`
 
-安装燕尾服 `mvproject install stc`
+初始化燕尾服(如果没有的话):  `mvproject install stc`
 
-初始化项目 `mvproject install webpack1`
+安装项目内容:                 `mvproject install webpack1`
 
 ## 构建编译
 

@@ -1,0 +1,53 @@
+<script type="text/x-jquery-tmpl" id="js_nav_tpl_sub">
+    {%js 
+        var _tag = V.utils.getUrlParam("tag");
+    %}
+    <div class="_nav_sub_cat_pop">
+        <ul>
+            {%each data.related_info%}
+                <li><a href="list.html?category=${data.category}&tag=${$value.tag}&tagname=${encodeURIComponent($value.title)}${kwParamStr}"
+                    {%if data.category == cid && $value.tag  == _tag %}class="_tag_active"{%/if%}
+                >${$value.title}</a></li>
+            {%/each%}
+        </ul>
+        <i class="_up_arrow"></i>
+    </div>
+</script>
+
+<script type="text/x-jquery-tmpl" id="js_nav_tpl">
+{%js 
+    var cid = V.utils.getUrlParam("category");
+    var keyword = V.utils.getUrlParam('kw');
+    var kwParamStr = keyword?'&kw='+keyword:'';
+%}
+<div class="wrap clearfix" bk="导航栏">
+    <ul id="main_nav"> 
+
+        <li class="nav_item home ${(window._page_name == 'index'?'current':'')}"><a href="index.html"><i></i> 首页</a></li>  
+
+        <li class="line"><a href="javascript:;"></a></li> 
+        <li class="nav_item " ><a href="list.html?category=hot${kwParamStr}" data-category="hot"><i></i> 推荐</a></li>
+
+        {%each data%}
+            {%js 
+                var dataCid = $value.category;
+                var navItemCls = dataCid === 'history' ? 'history' : '';
+                if($value.related_info && $value.related_info.length){
+                    navItemCls+=' _nav_item_has_child';
+                }
+                if(dataCid==cid){
+                    navItemCls+=' current';
+                }
+            %}
+            <li class="nav_item ${navItemCls}" >
+                <a href="list.html?category=${dataCid}${kwParamStr}" data-category="${dataCid}">${$value.title}</a>
+                {%if $value.related_info && $value.related_info.length %}
+                    {%tmpl({ data: $value, kwParamStr:kwParamStr, cid:cid} ) $("#js_nav_tpl_sub")%}
+                {%/if%}
+            </li>
+        {%/each%}
+        <li class="nav_item favorite ${(cid == 'favorite'?'current':'')}"><a href="list.html?category=favorite${kwParamStr}" class="_need_login" data-category="favorite"><i></i> 我的关注</a></li></ul>
+    </ul>
+</div>
+</script>
+ 

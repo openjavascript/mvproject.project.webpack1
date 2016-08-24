@@ -1,0 +1,70 @@
+<script type="text/template" id="js_header_tpl">
+<div class="hd-wrap ">
+    <div class="logo"><a href="./index.html"><img src="http://p0.qhimg.com/t01519721a46bc29b2e.png"></a></div>
+    {%if show_collect %}
+        <div class="collect-wrapper">
+            <span>欢迎收藏：</span><span class="ctrl">Ctrl+D</span>
+        </div>
+    {%/if%}
+    <div class="headernav">
+        {%if isMobile %}
+            <a class="btn-buy" href="http://www.qikoo.com/preorder/jia?utm_source=shexiangji_guanwang&utm_medium=inside" target="_blank"><i></i>立即购买摄像机</a>
+        {%else%}
+          <a href="https://domain.com/web/index" class="my-camera-btn">我的摄像机</a>
+        {%/if%}
+    </div>
+    <div class="user-info">
+        <div class="_logouted">
+            <a class="_login" href="###" hidefocus="true">登录</a> 
+            &nbsp;|&nbsp; 
+            <a class="_reg" href="###" hidefocus="true">注册</a>
+        </div>
+        <div class="_logined" style="display:none;">
+            <div class="user-brief">
+                <div class="js-face-vip face-box">
+                    <img class="face-img _qh_uimg" src="http://quc.qhimg.com/dm/64_64_100/t00df551a583a87f4e9.jpg">
+                    <img class="face-vip" src="http://p8.yx-s.com/d/inn/36d42e30/vip_54x54.png">
+                </div>
+                <b class="_qh_uname"></b>
+            </div>
+            <div class="pop-user-box">
+                <div class="user-facebox pop-username ">
+                    <div class="face js-face-vip face-box">
+                        <img class="face-img _qh_uimg" src="http://quc.qhimg.com/dm/64_64_100/t00df551a583a87f4e9.jpg">
+                        <img class="face-vip" src="http://p8.yx-s.com/d/inn/36d42e30/vip_54x54.png">
+                    </div>
+                    <b class="username _qh_uname"></b>
+                    <br /><a href="###" class="logout _logout">退出</a>
+                </div>
+                <div class="user-navbar">
+                    <a href="list.html?category=favorite" class="my-favorite"><i></i> <b>我的关注</b></a>
+                    <a href="https://domain.com/web/index" class="my-camera"><i></i> <b>我的摄像机</b></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    {%if !isMobile %}
+        <div class="search-box">
+            <div class="search-area">
+                <form action="list.html" method="get" name="search">
+                    <button class="btn" type="submit"></button>
+                    <input type="text" class="kw" name="kw" autocomplete="off" id="kw" value="${V.utils.getUrlParam('kw')||''}" placeholder="输入台名/台号搜索">
+                </form>
+                <div class="hot-list">
+                    <div class="list-title"><i></i> <span>热搜榜</span></div>
+                    <ul id="search-hotwd-tmpl-box">
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    {%/if%}
+</div>
+</script>
+
+<!-- 搜索热词列表模板 -->
+<script type="text/x-jquery-tmpl" id="search-hotwd-tmpl">
+  {%each data%}
+    <li><a href="list.html?kw=${name}"><i>${getTmplIndex($value,data)}</i> ${name}</a></li>
+  {%/each%}
+</script>

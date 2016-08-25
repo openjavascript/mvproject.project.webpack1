@@ -41,79 +41,6 @@ body{
     margin-top: 13px;
 }
 
-/*我的摄像机按钮*/
-.header .headernav .my-camera-btn{
-  display: inline-block;
-  background-color: #fff;
-  color: #2a2a2a;
-  border-radius: 30px;
-  padding: 4px 20px;
-  font-size: 16px;
-  height:26px;
-  line-height:26px;
-}
-.header .headernav .my-camera-btn i{
-  display: inline-block;
-  width: 19px;
-  height: 23px;
-  background-image: url(../img/icon_index_all.png);
-  background-position: 0px -216px;
-  vertical-align: -5px;
-}
-
-/* 右侧漂浮二维码和回到顶部 sta */
-.sidebar-tool{
-    position: fixed;
-    left: 50%;
-    margin-left: 604px;
-    top: 200px;
-    z-index: 10;
-}
-.sidebar-tool .st-link-box{
-    display: block;
-    width: 72px;
-}
-.sidebar-tool .btn-link {
-    /* 链接按钮默认图为“立即购买” */
-    background: url(../img/icon_index_all.png) 0px -327px no-repeat;
-    display: block;
-    height: 72px;
-    width: 72px;
-    margin-top: 4px;
-}
-.sidebar-tool .btn-st-qrcode { background-position: 0px -251px; }
-.sidebar-tool .st-qrcode-img {
-    background-image: url(../img/code_index.png);
-    background-size: 134px 134px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    display: none;
-    position: absolute;
-    top: 0;
-    left: -140px;
-    height: 134px;
-    width: 134px;
-}
-.sidebar-tool  .st-qrcode-show .st-qrcode-img{
-    display: block;
-    -webkit-animation-name: fadeInDown;
-    animation-name: fadeInDown;
-}
-.sidebar-tool .btn-gotop{
-    display: none;
-}
-.sidebar-tool .btn-back-top {
-    display:block;
-    background: url(../img/gotop.png) no-repeat;
-    margin: 5px 17px 0;
-    height: 42px;
-    width: 39px;
-}
-.sidebar-tool .btn-back-top:hover {
-    background-position:0 -47px;
-}
-/* 右侧漂浮二维码和回到顶部 enb */
-
 /*用户登录*/
 .header .user-info{
     float: right;
@@ -212,29 +139,6 @@ body{
 .header .user-info .pop-user-box .user-navbar a.my-page i{
     background: url(../img/nav_icon.png) no-repeat 3px 3px;
 }
-
-/* *头部用手机看直播按钮* */
-
-.header a.btn-buy {
-  display: inline-block; padding:0 20px;height: 38px;line-height:38px;border-radius:20px;
-	background-color: #c2efd9;
-	box-shadow: 0 1px rgba(0,0,0,.13);
-	border: solid 1px #ce4141;
-	color:#019a6d;font-size:15px;
-}
-.header a.btn-buy i{
-  display: inline-block;
-  width: 26px;
-  height: 34px;
-  background-image: url(../img/i.png);
-  background-repeat: no-repeat;
-  background-position: -147px -101px;
-  vertical-align:middle;
-  margin-right:5px;
-}
-.header a.btn-buy {background-color: #fff69f;border: solid 1px #ce4141;color:#ff4e00;}
-.header a.btn-buy i { width: 29px;background-position: -192px -101px;}
-.header a.btn-buy:hover{ background-color:#fdf075}
 
 
 /*搜索*/
@@ -340,7 +244,7 @@ body{
   display: block;
   padding: 0 7px;
 }
-.search-box .hot-list ul li a:hover{
+.search-box .hot-list ul li a:hover {
   background-color: #e5e5e5;
   color: inherit;
 }
@@ -387,7 +291,7 @@ body{
 .page-footer .f-copyright a{
   color: #8e8d8d;
 }
-.page-footer a:hover{
+.page-footer a:hover {
   color: #2696f6;
   text-decoration: underline;
 }

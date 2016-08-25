@@ -7,7 +7,7 @@
 </head>
 <body>
     <!-- 通用页面顶栏 -->
-    <div id="js_header" class="header"></div>
+    <%= require('html!./include/header_tpl.html')%>
 
     <!-- 频道导航 -->
     <div id="js_nav" class="channel-nav hd-ph"></div>
@@ -17,7 +17,6 @@
 
     <%= require('html!./include/pagination_tpl.html')%>
 
-    <%= require('html!./include/header_tpl.html')%>
     <%= require('html!./include/nav_tpl.html')%>
     <%= require('html!./include/index_tpl.html')%>
     <%= require('html!./include/footer_tpl.html')%>

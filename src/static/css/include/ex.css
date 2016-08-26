@@ -20,3 +20,10 @@
     margin: 0 10px;
     margin-bottom: -2px;
 }
+
+.demo_content {
+    text-align: center;
+    font-size: 64px;
+    font-weight: bold;
+    margin: 100px auto;
+}

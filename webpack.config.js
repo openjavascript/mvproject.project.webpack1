@@ -54,7 +54,7 @@ var config = {
         , alias: {
             'swfobject': __dirname + '/node_modules/swfobject-amd/swfobject.js'
         }
-
+	, root: [ './src-webpack' ]
     }
     , plugins: [
         new CommonsChunkPlugin({
